@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-def magic_calculation(a, b, c):
-    if a < b:
-        return c
-    elif c > b:
-        return a + b
-
-    return a * b - c
+i = 0
+for c in range(ord('z'), ord('a') - 1, -1):
+    print("{}".format(chr(c - 32) if c % 2 != 0 else chr(c)), end="")
