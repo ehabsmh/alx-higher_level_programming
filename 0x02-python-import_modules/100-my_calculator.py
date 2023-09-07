@@ -8,7 +8,7 @@ if __name__ == "__main__":
     args_len = len(args)
 
     if args_len - 1 != 3:
-        print("./100-my_calculator.py <a> <operator> <b>")
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
 
     a = int(args[1])
@@ -17,13 +17,13 @@ if __name__ == "__main__":
 
     match (op):
         case '+':
-            print(f"{a} {op} {b} = {add(a, b)}")
+            print(f"{a:d} {op} {b:d} = {add(a, b):d}")
         case '-':
-            print(f"{a} {op} {b} = {sub(a, b)}")
+            print(f"{a:d} {op} {b:d} = {sub(a, b):d}")
         case '*':
-            print(f"{a} {op} {b} = {mul(a, b)}")
+            print(f"{a:d} {op} {b:d} = {mul(a, b):d}")
         case '/':
-            print(f"{a} {op} {b} = {div(a, b)}")
+            print(f"{a:d} {op} {b:d} = {div(a, b):d}")
         case _:
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
