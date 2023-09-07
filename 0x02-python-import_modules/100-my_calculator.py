@@ -17,13 +17,13 @@ if __name__ == "__main__":
 
     match (op):
         case '+':
-            print(f"{a:d} {op} {b:d} = {add(a, b):d}")
+            print("{:d} {:s} {:d} = {:d}".format(a, op, b, add(a, b)))
         case '-':
-            print(f"{a:d} {op} {b:d} = {sub(a, b):d}")
+             print("{:d} {:s} {:d} = {:d}".format(a, op, b, sub(a, b)))
         case '*':
-            print(f"{a:d} {op} {b:d} = {mul(a, b):d}")
+            print("{:d} {:s} {:d} = {:d}".format(a, op, b, mul(a, b)))
         case '/':
-            print(f"{a:d} {op} {b:d} = {div(a, b):d}")
+            print("{:d} {:s} {:d} = {:d}".format(a, op, b, div(a, b)))
         case _:
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
