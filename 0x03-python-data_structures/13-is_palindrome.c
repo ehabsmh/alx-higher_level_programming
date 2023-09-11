@@ -40,5 +40,6 @@ int is_palindrome(listint_t **head)
 		trav2 = *head;
 	}
 
+	trav2 = NULL;
 	return (1);
 }
