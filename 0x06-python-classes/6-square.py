@@ -8,23 +8,20 @@ class Square:
     """ Initialize a new square
 
     Args:
-        __size: The size of the new square.
+        size: The size of the new square.
+        position: The position of the new square.
     """
-    def __init__(self, __size=0, position=(0, 0)):
+    def __init__(self, size=0, position=(0, 0)):
 
-        self.__size = __size
-        self.__position = position
+        self.size = size
+        self.position = position
 
-    """ area - Public instance method that returns the current square area """
-    def area(self):
-
-        return self.__size ** 2
+    
 
     """ size - Getter Property to get the size of the square """
     @property
     def size(self):
         """ size - returns __size of the square """
-
         return self.__size
 
     """ size - Setter property to update the private `__size` """
@@ -37,7 +34,7 @@ class Square:
             raise TypeError("size must be an integer")
 
         """ __size cannot be less than 0 """
-        if self.__size < 0:
+        if value < 0:
 
             raise ValueError("size must be >= 0")
 
@@ -53,11 +50,19 @@ class Square:
     def position(self, value):
 
         """ __position must be a tuple of 2 positive integers """
-        if not isinstance(value, tuple) or len(value) != 2:
+        if (not isinstance(value, tuple) or
+                len(value) != 2 or
+                not all(isinstance(n, int) for n in value) or
+                not all(n >= 0 for n in value)):
 
             raise TypeError("position must be a tuple of 2 positive integers")
 
         self.__position = value
+
+    """ area - Public instance method that returns the current square area """
+    def area(self):
+
+        return self.__size ** 2
 
         """ my_print - prints the square with the character # """
     def my_print(self):
