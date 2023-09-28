@@ -16,8 +16,6 @@ class Square:
         self.size = size
         self.position = position
 
-    
-
     """ size - Getter Property to get the size of the square """
     @property
     def size(self):
