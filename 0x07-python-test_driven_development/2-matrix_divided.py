@@ -10,9 +10,12 @@ Args:
 def matrix_divided(matrix, div):
     """ divides all elements of a matrix. """
 
+    if not matrix:
+        return None
+
     """ matrix must be a list of lists """
     if (not isinstance(matrix[0], list) or
-            not isinstance(matrix, list)):
+            not all(isinstance(row, list) for row in matrix)):
 
         raise TypeError(
             "matrix must be a matrix (list of lists) of integers/floats")
