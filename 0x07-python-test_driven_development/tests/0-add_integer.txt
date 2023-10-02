@@ -1,0 +1,54 @@
+Testing ``0-add_integer`` module
+Using ``add_integer`` function
+=================================
+
+First: import ``add_integer`` from ``0-add_integer``
+--------------------------------------------
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+===================================================
+
+Testing Numbers:
+Expected: Normal addition
+-------------------------
+
+>>> add_integer(5, 20)
+25
+
+>>> add_integer(-100, 40)
+-60
+
+>>> add_integer(10)
+108
+
+===================================================
+
+Testing Floating point numbers
+Expected: converted to integer
+------------------------------
+
+>>> add_integer(5.7, 9.3)
+14
+
+>>> add_integer(5.7)
+103
+
+>>> add_integer(0.5, 5.2)
+5
+
+==================================================
+
+Testing numerical strings
+Expected: TypeError
+-------------------------
+
+>>> add_integer(5, '20')
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+>>> add_integer('20', 5)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
