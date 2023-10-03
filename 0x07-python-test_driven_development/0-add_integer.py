@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-"""Addition Module
-    Args:
-        a: first argument; type must be int or float.
-        b: second argument; default is 98. If given must be int or float
+"""
+This is the "0-add_integer" module.
+
+The 0-add_integer module supplies one function, add_integer()
 """
 
 

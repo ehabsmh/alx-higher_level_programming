@@ -1,0 +1,89 @@
+Testing ``4-print_square`` module
+using print_square(size) function
+=====================================
+
+First: import print_square from 4-print_square
+-----------------------------------------------
+
+>>> print_square = __import__("4-print_square").print_square
+
+=============================================================
+
+size as an integer
+-----------------------
+
+>>> print_square(5)
+#####
+#####
+#####
+#####
+#####
+
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+_____________________________________________________________
+
+size if not integer
+Expected: TypeError Exception
+-----------------------------
+
+>>> print_square('5')
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square([7])
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+=============================================================
+
+size must be >= 0
+-----------------
+
+>>> print_square(0)
+...
+
+=============================================================
+
+If size is less than 0
+Expected: ValueError Exception
+------------------------------
+
+>>> print_square(-5)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+=============================================================
+
+if size is a float
+Expected: TypeError Exception
+------------------
+
+>>> print_square(5.5)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+=============================================================
+
+if size is a float and is less than 0
+Expected: TypeError Exception
+------------------------------
+
+>>> print_square(-5.5)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
