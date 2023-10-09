@@ -1,0 +1,64 @@
+Testing the module ``7-base_geometry``
+using ``bg`` object of class ``BaseGeometry``
+=============================================
+
+Importing class BaseGeometry from the module:
+---------------------------------------------
+
+>>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+============================================================
+
+Testing valid inputs:
+---------------------
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_integer", 7)
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("height", 50)
+
+============================================================
+
+Testing value input as a negative number and 0:
+-----------------------------------------
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("length", -10)
+Traceback (most recent call last):
+...
+ValueError: length must be greater than 0
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("width", 0)
+Traceback (most recent call last):
+...
+ValueError: width must be greater than 0
+
+============================================================
+
+Testing value input as not an integer:
+--------------------------------------
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("width", "Ehab")
+Traceback (most recent call last):
+...
+TypeError: width must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("distance", [50])
+Traceback (most recent call last):
+...
+TypeError: distance must be an integer
+
+============================================================
+
+Testing area method:
+--------------------
+
+>>> bg = BaseGeometry()
+>>> bg.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
