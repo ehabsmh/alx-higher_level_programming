@@ -21,4 +21,7 @@ def is_same_class(obj, a_class):
       False: if the object is not an instance of the class
     """
 
-    return (isinstance(obj, a_class))
+    if a_class is object:
+        return False
+
+    return isinstance(obj, a_class)
