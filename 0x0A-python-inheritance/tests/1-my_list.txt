@@ -74,6 +74,10 @@ Checking the instantiation:
 >>> isinstance(my_list, MyList)
 True
 
+>>> my_list = MyList()
+>>> isinstance(my_list, list)
+True
+
 =========================================
 
 Checking for subclass:
@@ -82,3 +86,7 @@ Checking for subclass:
 >>> my_list = MyList()
 >>> issubclass(MyList, list)
 True
+
+>>> my_list = MyList()
+>>> issubclass(list, MyList)
+False
