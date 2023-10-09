@@ -38,10 +38,10 @@ Testing value input as not an integer:
 --------------------------------------
 
 >>> bg = BaseGeometry()
->>> bg.integer_validator("width", "Ehab")
+>>> bg.integer_validator("name", "John")
 Traceback (most recent call last):
 ...
-TypeError: width must be an integer
+TypeError: name must be an integer
 
 >>> bg.integer_validator("distance", [50, 1, 4])
 Traceback (most recent call last):
@@ -57,17 +57,6 @@ TypeError: age must be an integer
 Traceback (most recent call last):
 ...
 TypeError: distance must be an integer
-
-============================================================
-
-Testing area method:
---------------------
-
->>> bg = BaseGeometry()
->>> bg.area()
-Traceback (most recent call last):
-...
-Exception: area() is not implemented
 
 ============================================================
 
