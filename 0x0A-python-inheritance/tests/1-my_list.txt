@@ -1,19 +1,55 @@
-Test file for module ``1-my_list.py``
-using ``print_sorted`` function
+Testing ``1-my_list.py`` module
+using ``MyList``
+-------------------------------
+
+Importing class ``MyList`` from the module:
 
 >>> MyList = __import__("1-my_list").MyList
-
-============================================
+===========================================
 
 >>> my_list = MyList()
->>> my_list.append(1)
->>> my_list.append(4)
+>>> my_list.append(7)
 >>> my_list.append(2)
->>> my_list.append(3)
+>>> my_list.append(10)
 >>> my_list.append(5)
+>>> my_list.append(3)
 >>> print(my_list)
 [1, 4, 2, 3, 5]
 >>> my_list.print_sorted()
-[1, 2, 3, 4, 5]
->>> print(my_list)
-[1, 4, 2, 3, 5]
+[2, 3, 5, 7, 10]
+
+===========================================
+
+Testing repeated numbers:
+-------------------------
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(9)
+>>> my_list.append(9)
+>>> my_list.append(7)
+>>> my_list.append(1)
+>>> my_list.append(7)
+[1, 1, 7, 7, 9, 9]
+
+=========================================
+
+Testing one number:
+-------------------
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+[1]
+
+=========================================
+
+Testing negative and positive numbers:
+-------------------
+>>> my_list = MyList()
+>>> my_list.append(20)
+>>> my_list.append(9)
+>>> my_list.append(2)
+>>> my_list.append(-3)
+>>> my_list.append(-20)
+>>> my_list.append(-1)
+[-20, -3, -1, 2, 9, 20]
