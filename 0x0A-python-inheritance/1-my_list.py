@@ -1,24 +1,10 @@
 #!/usr/bin/python3
-
-"""
-This module contains a class that inherits
-from other class
-
-The class `MyList` contains only one function
-that prints sorted list in ascending order.
-"""
+"""My list"""
 
 
 class MyList(list):
-    """
-    This class inherits from list class
-    contains only one function that prints the list
-    """
+    """A class MyList that inherits from list"""
 
     def print_sorted(self):
-        """
-        This function prints the list,
-        but sorted in ascending order.
-        """
-
+        """prints the list, but sorted (ascending sort)"""
         print(sorted(self))
