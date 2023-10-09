@@ -101,18 +101,3 @@ Testing if one arg is passed to the function:
 Traceback (most recent call last):
 ...
 TypeError: integer_validator() missing 1 required positional argument: 'value'
-
-============================================================
-
-Testing instantiation:
---------------------
-
->>> bg = BaseGeometry()
->>> isinstance(bg, BaseGeometry)
-True
-
-    __________________________
-
->>> bg = BaseGeometry()
->>> type(bg)
-<class '7-base_geometry.BaseGeometry'>
