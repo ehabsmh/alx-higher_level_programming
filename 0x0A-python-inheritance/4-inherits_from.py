@@ -25,4 +25,4 @@ def inherits_from(obj, a_class):
       False: if the object is not an instance of the class.
     """
 
-    return isinstance(obj, a_class) and obj.__class__ is not a_class
+    return isinstance(obj, a_class) and type(obj) is not a_class
