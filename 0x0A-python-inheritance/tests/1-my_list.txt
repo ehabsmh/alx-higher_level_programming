@@ -52,6 +52,7 @@ Testing one number:
 
 Testing negative and positive numbers:
 -------------------
+
 >>> my_list = MyList()
 >>> my_list.append(20)
 >>> my_list.append(9)
@@ -67,7 +68,17 @@ Testing negative and positive numbers:
 =========================================
 
 Checking the instantiation:
--------------------
+---------------------------
+
 >>> my_list = MyList()
 >>> isinstance(my_list, MyList)
+True
+
+=========================================
+
+Checking for subclass:
+----------------------
+
+>>> my_list = MyList()
+>>> issubclass(MyList, list)
 True
