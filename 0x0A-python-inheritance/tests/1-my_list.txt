@@ -5,6 +5,7 @@ using ``MyList``
 Importing class ``MyList`` from the module:
 
 >>> MyList = __import__("1-my_list").MyList
+
 ===========================================
 
 >>> my_list = MyList()
@@ -14,7 +15,7 @@ Importing class ``MyList`` from the module:
 >>> my_list.append(5)
 >>> my_list.append(3)
 >>> print(my_list)
-[1, 4, 2, 3, 5]
+[7, 2, 10, 5, 3]
 >>> my_list.print_sorted()
 [2, 3, 5, 7, 10]
 
@@ -30,6 +31,9 @@ Testing repeated numbers:
 >>> my_list.append(7)
 >>> my_list.append(1)
 >>> my_list.append(7)
+>>> print(my_list)
+[1, 9, 9, 7, 1, 7]
+>>> my_list.print_sorted()
 [1, 1, 7, 7, 9, 9]
 
 =========================================
@@ -39,6 +43,9 @@ Testing one number:
 
 >>> my_list = MyList()
 >>> my_list.append(1)
+>>> print(my_list)
+[1]
+>>> my_list.print_sorted()
 [1]
 
 =========================================
@@ -52,4 +59,15 @@ Testing negative and positive numbers:
 >>> my_list.append(-3)
 >>> my_list.append(-20)
 >>> my_list.append(-1)
+>>> print(my_list)
+[20, 9, 2, -3, -20, -1]
+>>> my_list.print_sorted()
 [-20, -3, -1, 2, 9, 20]
+
+=========================================
+
+Checking the instantiation:
+-------------------
+>>> my_list = MyList()
+>>> isinstance(my_list, MyList)
+True
