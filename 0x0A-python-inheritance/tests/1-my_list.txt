@@ -8,6 +8,18 @@ Importing class ``MyList`` from the module:
 
 ===========================================
 
+Testing empty list:
+-------------------------
+
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
+
+===========================================
+
+Testing positive numbers:
+-------------------------
+
 >>> my_list = MyList()
 >>> my_list.append(7)
 >>> my_list.append(2)
