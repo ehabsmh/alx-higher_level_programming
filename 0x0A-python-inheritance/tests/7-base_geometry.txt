@@ -107,6 +107,17 @@ TypeError: BaseGeometry.integer_validator() takes 3 positional arguments but 4 w
 
 ============================================================
 
+Testing if one arg is passed to the function:
+----------------------------------------------
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("index")
+Traceback (most recent call last):
+...
+TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+
+============================================================
+
 Testing instantiation:
 --------------------
 
