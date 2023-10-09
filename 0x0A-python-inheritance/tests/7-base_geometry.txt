@@ -21,13 +21,15 @@ Testing valid inputs:
 ============================================================
 
 Testing value input as a negative number and 0:
------------------------------------------
+-----------------------------------------------
 
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("length", -10)
 Traceback (most recent call last):
 ...
 ValueError: length must be greater than 0
+
+    __________________________
 
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("width", 0)
@@ -46,8 +48,26 @@ Traceback (most recent call last):
 ...
 TypeError: width must be an integer
 
+    __________________________
+
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("distance", [50])
+Traceback (most recent call last):
+...
+TypeError: distance must be an integer
+
+    __________________________
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", 7.5)
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+    __________________________
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("distance", "50")
 Traceback (most recent call last):
 ...
 TypeError: distance must be an integer
@@ -62,3 +82,29 @@ Testing area method:
 Traceback (most recent call last):
 ...
 Exception: area() is not implemented
+
+============================================================
+
+Testing if no args are passed to the function:
+----------------------------------------------
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+============================================================
+
+Testing instantiation:
+--------------------
+
+>>> bg = BaseGeometry()
+>>> isinstance(bg, BaseGeometry)
+True
+
+    __________________________
+
+>>> bg = BaseGeometry()
+>>> type(bg)
+<class '7-base_geometry.BaseGeometry'>
