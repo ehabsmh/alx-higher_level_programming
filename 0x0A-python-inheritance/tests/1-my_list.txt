@@ -102,3 +102,12 @@ True
 >>> my_list = MyList()
 >>> issubclass(list, MyList)
 False
+
+=========================================
+
+Checking for type:
+----------------------
+
+>>> my_list = MyList()
+>>> type(my_list) == MyList
+True
