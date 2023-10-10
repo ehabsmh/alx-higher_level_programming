@@ -18,12 +18,5 @@ def to_json_string(my_obj):
     Return:
       the JSON representation of ``my_obj``
     """
-    str_myobj = f'''{my_obj}'''
 
-    str_myobj = str_myobj.replace("'", '"')
-    str_myobj = str_myobj.replace("True", 'true')
-    str_myobj = str_myobj.replace("False", 'false')
-
-    json.loads(str_myobj)
-
-    return (str_myobj)
+    return json.dumps(my_obj)
