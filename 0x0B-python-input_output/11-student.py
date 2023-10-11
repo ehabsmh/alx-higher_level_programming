@@ -45,4 +45,7 @@ class Student:
         Args:
           json: will always be a dictionary
         """
-        self.__dict__ = json
+
+        for key, value in json.items():
+            if hasattr(self, key):
+                setattr(self, key, value)
