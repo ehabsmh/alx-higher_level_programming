@@ -7,7 +7,7 @@ returns the dictionary description
 
 def class_to_json(obj):
     """
-    Returns the dictionary description with simple data structure 
+    Returns the dictionary description with simple data structure
     for JSON serialization of an object
 
     Args: an instance of a Class
