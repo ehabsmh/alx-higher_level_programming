@@ -72,3 +72,12 @@ class Base:
             return []
 
         return json.loads(json_string)
+
+    # ___________________________________________________________________
+
+    @classmethod
+    def create(cls, **dictionary):
+        ob = cls(5, 2)
+        ob.update(**dictionary)
+
+        return ob
