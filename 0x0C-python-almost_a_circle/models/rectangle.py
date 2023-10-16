@@ -177,11 +177,11 @@ class Rectangle(Base):
     # _______________________________________________________
 
     def __str__(self):
-        """String representation of any object"""
+        """Return: string representation of any object"""
 
         dimensions = f"{self.__x}/{self.__y}"
         measurement = f"{self.__width}/{self.__height}"
-        return f"{Rectangle.__name__} ({self.id}) {dimensions} - {measurement}"
+        return f"[Rectangle] ({self.id}) {dimensions} - {measurement}"
 
     # _______________________________________________________
 
