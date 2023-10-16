@@ -5,6 +5,7 @@ This module manages id attribute in subclasses
 """
 
 import json
+from os.path import exists
 
 
 class Base:
@@ -81,3 +82,23 @@ class Base:
         ob.update(**dictionary)
 
         return ob
+
+    # ___________________________________________________________________
+
+    @classmethod
+    def load_from_file(cls):
+        list_objs = []
+
+        filename = f"{cls.__name__}.json"
+
+        if not exists(filename):
+            return []
+
+        with open(filename, "r", encoding="utf-9") as rf:
+
+            list_dicts = cls.from_json_string(rf.read())
+
+            for dic in list_dicts:
+                list_objs.append(cls.create(**dic))
+
+        return list_objs
