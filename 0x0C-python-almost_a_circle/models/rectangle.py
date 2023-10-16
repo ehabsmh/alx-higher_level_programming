@@ -155,13 +155,13 @@ class Rectangle(Base):
         Rectangle.__validate_attribute("y", value)
         self.__y = value
 
-    # _______________________________________________________
+    # ____________________________________________________________
 
     def area(self):
         """Return: width * height"""
         return self.__width * self.__height
 
-    # _______________________________________________________
+    # ____________________________________________________________
 
     def display(self):
         """
@@ -174,7 +174,7 @@ class Rectangle(Base):
             print(' ' * self.__x, end='')
             print('#' * self.__width + '\n', end='')
 
-    # _______________________________________________________
+    # ____________________________________________________________
 
     def __str__(self):
         """Return: string representation of any object"""
@@ -183,7 +183,7 @@ class Rectangle(Base):
         measurement = f"{self.__width}/{self.__height}"
         return f"[Rectangle] ({self.id}) {dimensions} - {measurement}"
 
-    # _______________________________________________________
+    # ____________________________________________________________
 
     def update(self, *args, **kwargs):
         """
@@ -205,3 +205,17 @@ class Rectangle(Base):
         for k, v in kwargs.items():
             if hasattr(self, k):
                 setattr(self, k, v)
+
+    # ____________________________________________________________
+
+    def to_dictionary(self):
+        """returns the dictionary representation of a Rectangle"""
+        my_dict = {}
+
+        my_list = ("id", "width", "height", "x", "y")
+
+        for ele in my_list:
+            rect_attribute = getattr(self, ele)
+            my_dict[ele] = rect_attribute
+
+        return my_dict
