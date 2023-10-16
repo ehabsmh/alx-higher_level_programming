@@ -4,6 +4,8 @@
 This module manages id attribute in subclasses
 """
 
+import json
+
 
 class Base:
     """Defines objects of type Base"""
@@ -25,3 +27,21 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    # ___________________________________________________________________
+
+    def to_json_string(list_dictionaries):
+        """
+        Returns the JSON string representation of list_dictionaries
+
+        Args:
+            list_dictionaries: a list of dictionaries
+
+        Return: "[]" if list_dictionaries is None or empty OTHERWISE,
+                return the JSON string representation of list_dictionaries.
+        """
+
+        if list_dictionaries is None or len(list_dictionaries) == 0:
+            return "[]"
+
+        return json.dumps(list_dictionaries)
