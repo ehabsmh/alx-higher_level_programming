@@ -30,7 +30,7 @@ class TestBase(unittest.TestCase):
         self.assertEqual(b1.id, b2.id - 1)
 
     def test_instantiation(self):
-        b1 = Base() 
+        b1 = Base()
         self.assertIsInstance(b1, Base)
         b2 = Base(12)
         self.assertIsInstance(b2, Base)

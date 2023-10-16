@@ -33,7 +33,6 @@ class TestRectangle(unittest.TestCase):
     def test_with_args(self):
         r1 = Rectangle(10, 2, 4, 4)
 
-
     def test_id(self):
         r1 = Rectangle(10, 2, 0, 0, 12)
         self.assertEqual(r1.id, 12)
