@@ -18,3 +18,12 @@ class Square(Rectangle):
         """Square instance string representation"""
         dimensions = f"{self.x}/{self.y}"
         return f"[Square] ({self.id}) {dimensions} - {self.width}"
+
+    @property
+    def size(self):
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        self.width = value
+        self.height = self.width
