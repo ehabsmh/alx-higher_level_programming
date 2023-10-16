@@ -14,16 +14,47 @@ class Square(Rectangle):
 
         super().__init__(size, size, x, y, id)
 
+    # ___________________________________________________________________
+
     def __str__(self):
         """Square instance string representation"""
         dimensions = f"{self.x}/{self.y}"
         return f"[Square] ({self.id}) {dimensions} - {self.width}"
 
+    # ___________________________________________________________________
+
     @property
     def size(self):
+        """Return: width"""
+
         return self.width
 
     @size.setter
     def size(self, value):
+        """Sets the width with a specific value and assign it to the height"""
+
         self.width = value
         self.height = self.width
+
+    # ___________________________________________________________________
+
+    def update(self, *args, **kwargs):
+        """
+        This method updates the attributes with args and kwargs
+
+        Args:
+            args: is variable args of non key-value pairs
+            kwargs: is variable args of key-value pairs
+        """
+
+        arg_keys = ("id", "size", "x", "y")
+
+        for i, arg in enumerate(args[:len(arg_keys)]):
+            setattr(self, arg_keys[i], arg)
+
+        if args and len(args) > 0:
+            return
+
+        for k, v in kwargs.items():
+            if hasattr(self, k):
+                setattr(self, k, v)
