@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
-"""
-Defines class Rectangle
-"""
+"""Defines class Rectangle"""
 
 
 from models.base import Base
@@ -13,13 +11,13 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Initializes rectangle object
+        Initializes rectangle object with:
 
         Args:
             width: the width of a rectangle
             height: the height of a rectangle
-            x:
-            y:
+            x: Dimension X
+            y: Dimension Y
             id: Identifier for object, inherited from Base
         """
         super().__init__(id)
@@ -160,7 +158,7 @@ class Rectangle(Base):
     # _______________________________________________________
 
     def area(self):
-        """ area = width * height """
+        """Return: width * height"""
         return self.__width * self.__height
 
     # _______________________________________________________
@@ -179,6 +177,8 @@ class Rectangle(Base):
     # _______________________________________________________
 
     def __str__(self):
+        """String representation of any object"""
+
         dimensions = f"{self.__x}/{self.__y}"
         measurement = f"{self.__width}/{self.__height}"
         return f"{Rectangle.__name__} ({self.id}) {dimensions} - {measurement}"
@@ -186,6 +186,13 @@ class Rectangle(Base):
     # _______________________________________________________
 
     def update(self, *args, **kwargs):
+        """
+        This method updates the attributes with args and kwargs
+
+        Args:
+            *args: is variable args of non key-value pairs
+            **kwargs: is variable args of key-value pairs
+        """
 
         arg_keys = ("id", "width", "height", "x", "y")
 
