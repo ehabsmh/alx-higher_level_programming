@@ -63,3 +63,12 @@ class Base:
         with open(f"{cls.__name__}.json", "w", encoding="utf-8") as wf:
 
             wf.write(list_instances)
+
+    # ___________________________________________________________________
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None or len(json_string) == 0:
+            return []
+
+        return json.loads(json_string)
