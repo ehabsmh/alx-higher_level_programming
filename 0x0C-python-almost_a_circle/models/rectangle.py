@@ -194,7 +194,7 @@ class Rectangle(Base):
             **kwargs: is variable args of key-value pairs
         """
 
-        arg_keys = ("id", "width", "height", "x", "y")
+        arg_keys = ("width", "height", "x", "y", "id")
 
         for i, arg in enumerate(args[:len(arg_keys)]):
             setattr(self, arg_keys[i], arg)
