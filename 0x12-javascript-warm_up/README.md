@@ -61,3 +61,7 @@ Computes and prints a factorial (recursively).
 ## [11. Second biggest!](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/11-second_biggest.js)
 
 Searches the second biggest integer in the list of arguments.
+
+## [12. Object](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/12-object.js)
+
+Replaces the value 12 with 89:
