@@ -83,3 +83,7 @@ Executes x times a function.
 ## [16. Add me maybe](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/102-add_me_maybe.js)
 
 Increments and calls a function.
+
+## [17. Increment object](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/103-object_fct.js)
+
+Adding a new function incr that increments the integer value.
