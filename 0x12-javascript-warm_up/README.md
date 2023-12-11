@@ -34,3 +34,8 @@ If the argument can’t be converted to an integer, print “Not a number”
 ## [6-multi_languages_loop.js](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/5-to_integer.js)
 
 Prints 3 lines: (like 1-multi_languages.js) but by using an array of string and a loop
+
+## [7. I love C](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/7-multi_c.js)
+
+Prints x times “C is fun”, Where @x is the first argument of the script.
+If the first argument can’t be converted to an integer, print “Missing number of occurrences”
