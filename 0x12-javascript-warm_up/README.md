@@ -65,3 +65,9 @@ Searches the second biggest integer in the list of arguments.
 ## [12. Object](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/12-object.js)
 
 Replaces the value 12 with 89:
+
+## [13. Add file](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/13-add.js)
+
+returns the addition of 2 integers.
+
+The function is visible from outside
