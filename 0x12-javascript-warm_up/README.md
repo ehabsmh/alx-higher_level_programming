@@ -53,3 +53,7 @@ Prints the addition of 2 integers
 
 - The first argument is the first integer.
 - The second argument is the second integer.
+
+## [10. Factorial](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/10-factorial.js)
+
+Computes and prints a factorial (recursively).
