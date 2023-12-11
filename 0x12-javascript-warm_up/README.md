@@ -57,3 +57,7 @@ Prints the addition of 2 integers
 ## [10. Factorial](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/10-factorial.js)
 
 Computes and prints a factorial (recursively).
+
+## [11. Second biggest!](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/11-second_biggest.js)
+
+Searches the second biggest integer in the list of arguments.
