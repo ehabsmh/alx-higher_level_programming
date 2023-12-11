@@ -46,3 +46,10 @@ Prints a square.
 
 - The first argument is the size of the square
 - If the first argument can’t be converted to an integer, prints “Missing size”
+
+## [9. Add](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/9-add.js)
+
+Prints the addition of 2 integers
+
+- The first argument is the first integer.
+- The second argument is the second integer.
