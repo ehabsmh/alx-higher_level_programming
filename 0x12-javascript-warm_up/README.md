@@ -39,3 +39,10 @@ Prints 3 lines: (like 1-multi_languages.js) but by using an array of string and 
 
 Prints x times “C is fun”, Where @x is the first argument of the script.
 If the first argument can’t be converted to an integer, print “Missing number of occurrences”
+
+## [8. Square](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/8-square.js)
+
+Prints a square.
+
+- The first argument is the size of the square
+- If the first argument can’t be converted to an integer, prints “Missing size”
