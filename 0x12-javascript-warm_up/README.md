@@ -24,3 +24,9 @@ Prints the first argument passed to it
 ## [4. Create a sentence](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/4-concat.js)
 
 Prints two arguments passed to it, in the following format: “ is ”.
+
+## [5. An Integer](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/5-to_integer.js)
+
+Prints My number: <first argument converted in integer> if the first argument can be converted to an integer:
+
+If the argument can’t be converted to an integer, print “Not a number”
