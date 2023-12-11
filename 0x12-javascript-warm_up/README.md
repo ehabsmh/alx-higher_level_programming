@@ -30,3 +30,7 @@ Prints two arguments passed to it, in the following format: “ is ”.
 Prints My number: <first argument converted in integer> if the first argument can be converted to an integer:
 
 If the argument can’t be converted to an integer, print “Not a number”
+
+## [6-multi_languages_loop.js](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/5-to_integer.js)
+
+Prints 3 lines: (like 1-multi_languages.js) but by using an array of string and a loop
