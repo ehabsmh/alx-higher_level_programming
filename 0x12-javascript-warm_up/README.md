@@ -20,3 +20,7 @@ Prints a message depending of the number of arguments passed
 
 Prints the first argument passed to it
 - If no arguments are passed to the script, print “No argument”.
+
+## [4. Create a sentence](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/4-concat.js)
+
+Prints two arguments passed to it, in the following format: “ is ”.
