@@ -75,3 +75,7 @@ The function is visible from outside.
 ## [14. Const or not const](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/100-let_me_const.js)
 
 Modifies the value of myVar (100-main.js) to 333
+
+## [15. Call me Moby](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/101-call_me_moby.js)
+
+Executes x times a function.
