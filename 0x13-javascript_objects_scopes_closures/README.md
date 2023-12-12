@@ -30,7 +30,7 @@ Creates an instance method called print() that prints the rectangle using the ch
 
 ## [5. Square #0](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/5-square.js)
 
-Prints 3 lines: (like 1-multi_languages.js) but by using an array of string and a loop
+Defines a square and inherits from Rectangle of 4-rectangle.js
 
 ## [6. Square #1](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/6-square.js)
 
