@@ -25,9 +25,8 @@ Creates an instance method called print() that prints the rectangle using the ch
 
 ## [4. Rectangle #4](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/4-rectangle.js)
 
-Prints My number: <first argument converted in integer> if the first argument can be converted to an integer:
-
-If the argument can’t be converted to an integer, print “Not a number”
+- Creates an instance method called rotate() that exchanges the width and the height of the rectangle.
+- Creates an instance method called double() that multiples the width and the height of the rectangle by 2.
 
 ## [5. Square #0](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/5-square.js)
 
