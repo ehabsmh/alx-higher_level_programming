@@ -42,10 +42,8 @@ Returns the number of occurrences in a list.
 
 ## [8. Esrever](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/8-esrever.js)
 
-Prints the addition of 2 integers
-
-- The first argument is the first integer.
-- The second argument is the second integer.
+Returns the reversed version of a list.
+not allowed to use the built-in method `reverse`
 
 ## [9. Log me](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/9-logme.js)
 
