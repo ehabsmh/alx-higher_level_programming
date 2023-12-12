@@ -1,5 +1,9 @@
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg)](https://github.com/standard/semistandard)
 
+# JavaScript - Warm up
+
+### **This repository contains eighteen programs. The programs were written in Javascript language.**
+
 ## [0. First constant, first print](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/0-javascript_is_amazing.js)
 
 Prints “JavaScript is amazing”
