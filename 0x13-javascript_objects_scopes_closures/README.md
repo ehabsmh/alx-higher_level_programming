@@ -6,7 +6,7 @@
 
 ## [0. Rectangle #0](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/0-rectangle.js)
 
-empty class Rectangle that defines a rectangle:
+empty class Rectangle that defines a rectangle.
 
 ## [1. Rectangle #1](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/1-rectangle.js)
 
@@ -47,7 +47,14 @@ not allowed to use the built-in method `reverse`
 
 ## [9. Log me](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/9-logme.js)
 
-Computes and prints a factorial (recursively).
+Prints the number of arguments already printed and the new argument value. (see example below)
+
+
+```root@Ehab:~/alx/alx-higher_level_programming/0x13-javascript_objects_scopes_closures# ./main/9-main.js 
+0: Hello
+1: Best
+2: School
+```
 
 ## [10. Number conversion](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/10-converter.js)
 
