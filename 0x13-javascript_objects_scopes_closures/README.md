@@ -38,10 +38,7 @@ Creates an instance method called charPrint(c) that prints the rectangle using t
 
 ## [7. Occurrences](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/7-occurrences.js)
 
-Prints a square.
-
-- The first argument is the size of the square
-- If the first argument can’t be converted to an integer, prints “Missing size”
+Returns the number of occurrences in a list.
 
 ## [8. Esrever](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/8-esrever.js)
 
