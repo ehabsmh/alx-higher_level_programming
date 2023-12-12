@@ -21,7 +21,7 @@ If w or h is equal to 0 or not a positive integer, create an empty object.
 
 ## [3. Rectangle #3](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/3-rectangle.js)
 
-Prints two arguments passed to it, in the following format: “ is ”.
+Creates an instance method called print() that prints the rectangle using the character X.
 
 ## [4. Rectangle #4](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/4-rectangle.js)
 
