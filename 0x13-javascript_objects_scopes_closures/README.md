@@ -10,11 +10,10 @@ empty class Rectangle that defines a rectangle:
 
 ## [1. Rectangle #1](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/1-rectangle.js)
 
-Prints 3 lines:
+The constructor takes 2 arguments w and h
+- Initializes the instance attribute width with the value of w
+- Initializes the instance attribute height with the value of h
 
-- The first line: “C is fun”
-- The second line: “Python is cool”
-- The third line: “JavaScript is amazing”
 
 ## [2. Rectangle #2](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/2-rectangle.js)
 
