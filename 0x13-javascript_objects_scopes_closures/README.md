@@ -34,8 +34,7 @@ Defines a square and inherits from Rectangle of 4-rectangle.js
 
 ## [6. Square #1](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/6-square.js)
 
-Prints x times “C is fun”, Where @x is the first argument of the script.
-If the first argument can’t be converted to an integer, print “Missing number of occurrences”
+Creates an instance method called charPrint(c) that prints the rectangle using the character c.
 
 ## [7. Occurrences](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/7-occurrences.js)
 
