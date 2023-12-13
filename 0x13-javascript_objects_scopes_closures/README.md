@@ -67,9 +67,10 @@ Converts a number from base 10 to another base passed as argument.
 
 ## [12. Sorted occurences](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/101-sorted.js)
 
-returns the addition of 2 integers.
-
-The function is visible from outside.
+Imports a dictionary of occurrences by user id and computes a dictionary of user ids by occurrence.
+In the new dictionary:
+- A key is a number of occurrences
+- A value is the list of user ids
 
 ## [13. Concat files](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/102-concat.js)
 
