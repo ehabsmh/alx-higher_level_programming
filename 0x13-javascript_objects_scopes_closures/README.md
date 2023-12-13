@@ -58,7 +58,7 @@ Prints the number of arguments already printed and the new argument value. (see 
 
 ## [10. Number conversion](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/10-converter.js)
 
-Searches the second biggest integer in the list of arguments.
+Converts a number from base 10 to another base passed as argument.
 
 ## [11. Factor index](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/100-map.js)
 
