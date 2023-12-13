@@ -62,7 +62,8 @@ Converts a number from base 10 to another base passed as argument.
 
 ## [11. Factor index](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/100-map.js)
 
-Replaces the value 12 with 89:
+- imports an array from the file 100-data.js and computes a new array.
+- Prints both the initial list and the new list.
 
 ## [12. Sorted occurences](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x13-javascript_objects_scopes_closures/101-sorted.js)
 
