@@ -13,11 +13,10 @@ const arr = [srcFile1, srcFile2];
 
 for (let i = 0; i < arr.length; i++) {
   fileSys.readFile(arr[i], 'utf8', (err, data) => {
-    if (err) throw err;
+    if (err) console.log(err);
 
     fileSys.appendFile(destFile, data, (err) => {
-      if (err) throw err;
-      console.log('saved!');
+      if (err) console.log(err);
     });
   });
 }
