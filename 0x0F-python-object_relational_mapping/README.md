@@ -20,3 +20,9 @@ Lists all states with a name starting with N (upper N) from the database hbtn_0e
 
 Takes in an argument and displays all values in the states table of hbtn_0e_0_usa where name matches the argument.
 	- The program take 4 arguments: mysql username, mysql password, database name and state name searched (no argument validation needed).
+
+---
+
+## [3. SQL Injection...](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/3-my_safe_filter_states.py)
+
+Takes in arguments and displays all values in the states table of hbtn_0e_0_usa where name matches the argument. But this time, write one that is safe from MySQL injections!
