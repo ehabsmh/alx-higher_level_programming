@@ -18,13 +18,13 @@ if __name__ == "__main__":
     cursor = conn.cursor()
 
     cursor.execute("""SELECT * from states
-                    WHERE name LIKE 'N%'
                     ORDER BY states.id;""")
 
     filtered_states = cursor.fetchall()
 
     for state in filtered_states:
-        print(state)
+        if state[1].startswith("N"):
+            print(state)
 
     cursor.close()
     conn.close()
