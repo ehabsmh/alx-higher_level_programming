@@ -6,3 +6,10 @@
 
 Lists all states from the database hbtn_0e_0_usa:
 	- The program takes 3 arguments: mysql username, mysql password and database name.
+
+---
+
+## [1. Filter states](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/1-filter_states.py)
+
+Lists all states with a name starting with N (upper N) from the database hbtn_0e_0_usa:
+	- The program takes 3 arguments: mysql username, mysql password and database name.
