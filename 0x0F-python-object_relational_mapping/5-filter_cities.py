@@ -27,12 +27,7 @@ if __name__ == "__main__":
 
     cities = cursor.fetchall()
 
-    for i in range(len(cities)):
-        if i == len(cities) - 1:
-            print(f"{cities[i][0]}")
-            break
-
-        print(f"{cities[i][0]}", end=', ')
+    print(", ".join(map(lambda city: city[0], cities)))
 
     cursor.close()
     conn.close()
