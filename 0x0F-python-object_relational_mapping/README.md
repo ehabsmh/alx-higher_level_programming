@@ -29,3 +29,10 @@ Takes in an argument and displays all values in the states table of hbtn_0e_0_us
 ## [3. SQL Injection...](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/3-my_safe_filter_states.py)
 
 Takes in arguments and displays all values in the states table of hbtn_0e_0_usa where name matches the argument. But this time it is safe from MySQL injections!
+
+---
+
+## [4. Cities by states](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/4-cities_by_state.py)
+
+Lists all cities from the database hbtn_0e_4_usa.
+
