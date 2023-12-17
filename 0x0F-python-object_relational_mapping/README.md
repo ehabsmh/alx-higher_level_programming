@@ -52,3 +52,8 @@ State class:
 - links to the MySQL table states.
 - class attribute id that represents a column of an auto-generated, unique integer, can’t be null and is a primary key.
 - class attribute name that represents a column of a string with maximum 128 characters and can’t be null.
+
+## [7. All states via SQLAlchemy](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/7-model_state_fetch_all.py)
+
+Lists all State objects.
+- The program takes 3 arguments: mysql username, mysql password and database name.
