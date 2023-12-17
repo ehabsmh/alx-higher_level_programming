@@ -100,3 +100,9 @@ Prints the State object with the name passed as argument
 ## [12. Update a state](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/12-model_state_update_id_2.py)
 
 Changes the name of a State object where id = 2 to New Mexico from the database hbtn_0e_6_usa
+
+---
+
+## [13. Delete states](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/13-model_state_delete_a.py)
+
+Deletes all State objects with a name containing the letter a from the database hbtn_0e_6_usa.
