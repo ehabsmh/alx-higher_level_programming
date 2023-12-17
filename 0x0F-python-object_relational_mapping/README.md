@@ -106,3 +106,13 @@ Changes the name of a State object where id = 2 to New Mexico from the database 
 ## [13. Delete states](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/13-model_state_delete_a.py)
 
 Deletes all State objects with a name containing the letter a from the database hbtn_0e_6_usa.
+
+---
+
+## [14. Cities in state](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/14-model_city_fetch_by_state.py)
+
+Prints all City objects from the database hbtn_0e_14_usa:
+
+`<state name>: (<city id>) <city name>`
+
+[model_city.py](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/model_city.py) <-- Contains the class definition of a City.
