@@ -67,3 +67,12 @@ Lists all State objects.
 ## [8. First state](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/8-model_state_fetch_first.py)
 
 Prints the first State object.
+
+---
+
+## [9. Contains `a`](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/9-model_state_filter_a.py)
+
+Lists all State objects that contain the letter a from the database hbtn_0e_6_usa
+
+- The program takes 3 arguments: mysql username, mysql password and database name.
+- Results must be sorted in ascending order by states.id.
