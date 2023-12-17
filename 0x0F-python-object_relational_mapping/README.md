@@ -76,3 +76,14 @@ Lists all State objects that contain the letter a from the database hbtn_0e_6_us
 
 - The program takes 3 arguments: mysql username, mysql password and database name.
 - Results must be sorted in ascending order by states.id.
+
+---
+
+## [10. Get a state](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/10-model_state_my_get.py)
+
+Prints the State object with the name passed as argument
+
+- The program takes 4 arguments: mysql username, mysql password, database name and state name to search (SQL injection free).
+
+- Results must display the states.id
+- If no state has the name you searched for, display Not found
