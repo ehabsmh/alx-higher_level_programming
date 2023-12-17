@@ -36,3 +36,8 @@ Takes in arguments and displays all values in the states table of hbtn_0e_0_usa 
 
 Lists all cities from the database hbtn_0e_4_usa.
 
+---
+
+## [5. All cities by state](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/5-filter_cities.py)
+
+Takes in the name of a state as an argument and lists all cities of that state.
