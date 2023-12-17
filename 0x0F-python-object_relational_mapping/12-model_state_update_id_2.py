@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists all State objects that contain the letter a"""
+"""changes the name of a State object"""
 
 from model_state import Base, State
 from sys import argv
@@ -14,9 +14,7 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
 
-    new_state = State(name="Louisiana")
-
-    session.add(new_state)
+    state = session.query(State).filter(State.id == 2).first()
+    state.name = "New Mexico"
     session.commit()
-
-    print(new_state.id)
+    print(state.name)
