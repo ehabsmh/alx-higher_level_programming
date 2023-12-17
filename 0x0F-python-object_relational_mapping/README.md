@@ -87,3 +87,10 @@ Prints the State object with the name passed as argument
 
 - Results must display the states.id
 - If no state has the name you searched for, display Not found
+
+---
+
+## [11. Add a new state](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/11-model_state_insert.py)
+
+- Adds the State object “Louisiana” to the database hbtn_0e_6_usa
+- Prints the new states.id after creation
