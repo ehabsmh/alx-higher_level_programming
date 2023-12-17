@@ -21,9 +21,9 @@ if __name__ == "__main__":
                     FROM cities
                     INNER JOIN states
                     ON states.id = cities.state_id
-                    WHERE states.name LIKE BINARY %s
+                    WHERE states.name LIKE BINARY '{}'
                     ORDER BY cities.id;
-    """, (argv[4],))
+    """.format(argv[4]))
 
     cities = cursor.fetchall()
 
