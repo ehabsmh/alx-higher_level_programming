@@ -6,7 +6,7 @@
 
 Lists all states from the database hbtn_0e_0_usa:
 
-	- The program takes 3 arguments: mysql username, mysql password and database name.
+- The program takes 3 arguments: mysql username, mysql password and database name.
 
 ---
 
@@ -14,7 +14,7 @@ Lists all states from the database hbtn_0e_0_usa:
 
 Lists all states with a name starting with N (upper N) from the database hbtn_0e_0_usa:
 
-	- The program takes 3 arguments: mysql username, mysql password and database name.
+- The program takes 3 arguments: mysql username, mysql password and database name.
 
 ---
 
@@ -22,7 +22,7 @@ Lists all states with a name starting with N (upper N) from the database hbtn_0e
 
 Takes in an argument and displays all values in the states table of hbtn_0e_0_usa where name matches the argument.
 
-	- The program take 4 arguments: mysql username, mysql password, database name and state name searched (no argument validation needed).
+- The program take 4 arguments: mysql username, mysql password, database name and state name searched (no argument validation needed).
 
 ---
 
