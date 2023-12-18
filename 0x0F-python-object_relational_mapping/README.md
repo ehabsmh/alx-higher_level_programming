@@ -116,3 +116,19 @@ Prints all City objects from the database hbtn_0e_14_usa:
 `<state name>: (<city id>) <city name>`
 
 [model_city.py](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/model_city.py) <-- Contains the class definition of a City.
+
+---
+
+## [15. City relationship](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/100-relationship_states_cities.py)
+
+Creates the State “California” with the City “San Francisco” from the database hbtn_0e_100_usa.
+
+City class:
+No change
+
+State class:
+In addition to previous requirements, the class attribute cities must represent a relationship with the class City. If the State object is deleted, all linked City objects must be automatically deleted. Also, the reference from a City object to his State should be named state
+
+[relationship_city.py](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/relationship_city.py) <-- Contains the class definition of a cities table.
+
+[relationship_state.py](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/relationship_state.py) <-- Contains the class definition of the states table.
