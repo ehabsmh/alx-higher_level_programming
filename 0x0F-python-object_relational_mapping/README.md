@@ -1,6 +1,6 @@
 # Python - Object-relational mapping
 
-### **This directory contains eighteen programs. The programs were written in Python programming language.**
+### **This directory contains Sixteen programs. The programs were written in Python programming language.**
 
 ## [0. Get all states](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/0-select_states.py)
 
