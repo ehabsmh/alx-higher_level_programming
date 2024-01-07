@@ -3,20 +3,19 @@
 Usage: ./100-github_commits.py <repository name> <repository owner>
 """
 
-import sys
+from sys import argv
 import requests
 
 
 if __name__ == "__main__":
     url = "https://api.github.com/repos/{}/{}/commits".format(
-        sys.argv[2], sys.argv[1])
+        argv[2], argv[1])
 
-    r = requests.get(url)
-    commits = r.json()
     try:
+        commits = requests.get(url).json()
         for i in range(10):
-            print("{}: {}".format(
-                commits[i].get("sha"),
-                commits[i].get("commit").get("author").get("name")))
+            commit_sha = commits[i].get("sha")
+            commit_author = commits[i].get("commit").get("author").get("name")
+            print(f"{commit_sha}: {commit_author}")
     except IndexError:
         pass
