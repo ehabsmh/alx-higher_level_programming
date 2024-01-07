@@ -4,10 +4,16 @@
 
 ## [0. What's my status? #0](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x11-python-network_1/0-hbtn_status.py)
 
-Fetches https://alx-intranet.hbtn.io/status using `urllib` package
+Fetches https://alx-intranet.hbtn.io/status using `urllib` package.
 
 ---
 
 ## [1. Response header value #0](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x11-python-network_1/1-hbtn_header.py)
 
- Takes in a URL, sends a request to the URL and displays the value of the X-Request-Id variable found in the header of the response.
+ Takes in a URL, sends a request to the URL and displays the value of the X-Request-Id variable found in the header of the response using `urllib` package.
+
+---
+
+## [2. POST an email #0](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x11-python-network_1/2-post_email.py)
+
+Takes in a URL and an email, sends a POST request to the passed URL with the email as a parameter, and displays the body of the response (decoded in utf-8) using `urllib` package.
