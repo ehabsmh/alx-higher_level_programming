@@ -6,11 +6,9 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    argv = argv[1:2]
-    if not len(argv):
-        argv.append('')
+    letter = "" if len(argv) == 1 else argv[1]
 
-    payload = {"q": argv[0]}
+    payload = {"q": letter}
     url = "http://0.0.0.0:5000/search_user"
 
     try:
