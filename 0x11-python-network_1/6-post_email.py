@@ -8,5 +8,6 @@ from sys import argv
 
 if __name__ == "__main__":
     payload = {"email": argv[2]}
-    response = requests.post(argv[1], params=payload)
+    response = requests.post(argv[1], params=payload,)
+    response.encoding = 'UTF-8'
     print(response.text)
