@@ -60,3 +60,9 @@ takes in a letter and sends a POST request to http://0.0.0.0:5000/search_user wi
 ## [9. My GitHub!](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x11-python-network_1/10-my_github.py)
 
 Takes your GitHub credentials (username and password) and uses the GitHub API to display your id
+
+---
+
+## [10. Time for an interview!](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x11-python-network_1/100-github_commits.py)
+
+Lists 10 commits (from the most recent to oldest) of the repository “rails” by the user “rails” using GitHub API
