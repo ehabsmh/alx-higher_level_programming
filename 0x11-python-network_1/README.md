@@ -41,3 +41,10 @@ Takes in a URL, sends a request to the URL and displays the value of the variabl
 ## [6. POST an email #1](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x11-python-network_1/6-post_email.py)
 
 Takes in a URL and an email address, sends a POST request to the passed URL with the email as a parameter, and finally displays the body of the response. by using `requests` package.
+
+---
+
+## [7. Error code #1](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x11-python-network_1/7-error_code.py)
+
+Takes in a URL, sends a request to the URL and displays the body of the response. by using `requests` package.
+- If the HTTP status code is greater than or equal to 400, print: Error code: followed by the value of the HTTP status code
