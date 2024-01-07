@@ -48,3 +48,9 @@ Takes in a URL and an email address, sends a POST request to the passed URL with
 
 Takes in a URL, sends a request to the URL and displays the body of the response. by using `requests` package.
 - If the HTTP status code is greater than or equal to 400, print: Error code: followed by the value of the HTTP status code
+
+---
+
+## [8. Search API](https://github.com/ehabsmh/alx-higher_level_programming/blob/main/0x11-python-network_1/8-json_api.py)
+
+takes in a letter and sends a POST request to http://0.0.0.0:5000/search_user with the letter as a parameter.
