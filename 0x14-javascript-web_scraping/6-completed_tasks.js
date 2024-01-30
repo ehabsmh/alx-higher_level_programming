@@ -12,29 +12,21 @@ if (apiUrl.length) {
   process.exit(1);
 }
 
-request.get('https://jsonplaceholder.typicode.com/users',
-  { json: true },
-  (err, res, usrsBody) => {
-    if (err) console.log(err);
-    request.get(apiUrl, { json: true }, (err, res, todosBody) => {
-      try {
-        if (err) throw err;
+request.get(apiUrl, { json: true }, (err, res, todosBody) => {
+  try {
+    if (err) throw err;
 
-        let usrsCompletedTasks = {};
-        let count = 0;
+    const usrsCompletedTasks = {};
+    let count = 0;
+    todosBody.forEach(todo => {
+      if (todo.userId === undefined && todo.completed) count = 1;
+      else if (todo.completed) count++;
 
-        usrsBody.forEach(usr => {
-          todosBody.forEach(todo =>
-            todo.userId === usr.id && todo.completed ? count++ : count
-          );
-
-          usrsCompletedTasks[usr.id] = count;
-          count = 0;
-        });
-
-        console.log(usrsCompletedTasks);
-      } catch {
-        console.error(err);
-      }
+      usrsCompletedTasks[todo.userId] = count;
     });
-  });
+
+    console.log(usrsCompletedTasks);
+  } catch {
+    console.error(err);
+  }
+});
