@@ -20,7 +20,7 @@ request.get('https://jsonplaceholder.typicode.com/users',
       try {
         if (err) throw err;
 
-        const usrsCompletedTasks = {};
+        let usrsCompletedTasks = {};
         let count = 0;
 
         usrsBody.forEach(usr => {
