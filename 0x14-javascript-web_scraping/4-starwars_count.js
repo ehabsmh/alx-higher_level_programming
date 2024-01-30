@@ -8,7 +8,7 @@ let apiUrl = process.argv.slice(2, 3);
 if (apiUrl.length) {
   apiUrl = apiUrl.toString();
 } else {
-  console.log('Usage: ./0-readme.js apiUrl');
+  console.log('Usage: ./4-starwars_count.js API_URL');
   process.exit(1);
 }
 

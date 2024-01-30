@@ -8,7 +8,7 @@ let movieID = process.argv.slice(2, 3);
 if (movieID.length) {
   movieID = movieID.toString();
 } else {
-  console.log('Usage: ./0-readme.js movieID');
+  console.log('Usage: ./3-starwars_title.js movie_ID');
   process.exit(1);
 }
 
