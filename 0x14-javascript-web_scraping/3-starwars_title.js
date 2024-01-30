@@ -16,7 +16,7 @@ const endpoint = `https://swapi-api.alx-tools.com/api/films/${movieID}`;
 
 request.get(endpoint, { json: true }, (err, res, body) => {
   try {
-    console.log(body.title);
+    if (body.title) console.log(body.title);
     if (err) throw err;
   } catch {
     console.log(err);
