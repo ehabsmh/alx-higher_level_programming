@@ -15,15 +15,13 @@ if (apiUrl.length) {
 request.get(apiUrl, { json: true }, (err, res, body) => {
   try {
     const movies = body.results;
-    const moviesByChar = [];
+    let count = 0;
 
     movies.forEach(movie => {
-      const x = movie.characters.filter(char =>
-        char.includes('people/18'));
-      moviesByChar.push(...x);
+      movie.characters.forEach(char =>
+        char.includes('people/18') ? count++ : count);
     });
-
-    console.log(moviesByChar.length);
+    console.log(count);
 
     if (err) throw err;
   } catch {
