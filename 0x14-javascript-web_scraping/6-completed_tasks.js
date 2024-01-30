@@ -12,17 +12,18 @@ if (apiUrl.length) {
   process.exit(1);
 }
 
-request.get(apiUrl, { json: true }, (err, res, todosBody) => {
+request.get(apiUrl, { json: true }, (err, res, todos) => {
   try {
     if (err) throw err;
 
     const usrsCompletedTasks = {};
-    let count = 0;
-    todosBody.forEach(todo => {
-      if (todo.userId === undefined && todo.completed) count = 1;
-      else if (todo.completed) count++;
 
-      usrsCompletedTasks[todo.userId] = count;
+    todos.forEach((todo) => {
+      if (todo.completed && usrsCompletedTasks[todo.userId] === undefined) {
+        usrsCompletedTasks[todo.userId] = 1;
+      } else if (todo.completed) {
+        usrsCompletedTasks[todo.userId] += 1;
+      }
     });
 
     console.log(usrsCompletedTasks);
