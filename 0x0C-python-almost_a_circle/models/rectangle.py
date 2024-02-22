@@ -194,17 +194,15 @@ class Rectangle(Base):
             **kwargs: is variable args of key-value pairs
         """
 
-        arg_keys = ("width", "height", "x", "y", "id")
+        if args:
+            att_tup = ("id", "width", "height", "x", "y")
+            zipped = zip(att_tup, args)
+            [setattr(self, arg[0], arg[1]) for arg in zipped]
 
-        for i, arg in enumerate(args[:len(arg_keys)]):
-            setattr(self, arg_keys[i], arg)
-
-        if args and len(args) > 0:
-            return
-
-        for k, v in kwargs.items():
-            if hasattr(self, k):
-                setattr(self, k, v)
+        elif kwargs:
+            for k, v in kwargs.items():
+                if hasattr(self, k):
+                    setattr(self, k, v)
 
     # ____________________________________________________________
 
